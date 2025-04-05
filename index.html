@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>cxrawrr_shop - Photocard JKT48</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background-color: #c00;
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 22px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      animation: slideDown 0.6s ease-in-out;
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .logo {
+      font-size: 26px;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h2 {
+      border-left: 5px solid #c00;
+      padding-left: 10px;
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+      padding: 12px;
+      background-color: #f9f9f9;
+      border-left: 5px solid #eee;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .pay-button {
+      display: inline-block;
+      background-color: #c00;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .pay-button:hover {
+      background-color: #a00;
+    }
+    #pembayaran, #struk {
+      display: none;
+      background: #f6f6f6;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 10px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: all 0.2s;
+    }
+    .produk-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background: #fff;
+      margin-bottom: 8px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+    .produk-item input[type="number"] {
+      width: 60px;
+      margin-left: 10px;
+    }
+    .label-kategori {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .PHOTOCARD {
+      background-color: #333;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 15px;
+      margin-top: 40px;
+      background: #eee;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    #struk {
+      font-family: monospace;
+      background: #fff;
+      border: 2px dashed #000;
+      color: #000;
+    }
+    #struk h2 {
+      border-left: none;
+      padding-left: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    #struk ul {
+      margin: 10px 0;
+      padding-left: 0;
+    }
+    #struk p, #struk li {
+      font-size: 14px;
+      margin: 4px 0;
+    }
+    #struk .thanks {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="logo">cxrawrr_shop</span>
+  </header>
+  <section>
+    <h2>Ketentuan & Tatacara</h2>
+    <ul>
+      <li>Semua photocard dijual kondisi bagus dan aman buat koleksi</li>
+      <li>Bisa bayar via DANA, OVO, GoPay, atau Transfer Bank</li>
+      <li>Setelah form diisi, kami hubungi via chat</li>
+      <li>Ongkir dihitung sesuai alamat</li>
+      <li>Nomor pembayaran harus aktif & benar</li>
+    </ul>
+
+    <h2>Daftar Produk</h2>
+    <ul>
+      <li><span class="label-kategori PHOTOCARD">PHOTOCARD</span> Single Wonderland #KuSangatSuka - Rp 10.000 / 3 photocard</li>
+      <li><span class="label-kategori PHOTOCARD">PHOTOCARD</span> Meet & Greet 26th Single #KuSangatSuka - Rp 8.000 / photocard</li>
+      <li><span class="label-kategori PHOTOCARD">PHOTOCARD</span> Meet & Greet 26th Single Bibir yang Telah Dicuri - Rp 8.000 / photocard</li>
+      <li><span class="label-kategori PHOTOCARD">PHOTOCARD</span> Wonderland Circus - Rp 4.000 / photocard</li>
+      <li><span class="label-kategori PHOTOCARD">PHOTOCARD</span> Single #KuSangatSuka Tipe A - Rp 10.000 / photocard</li>
+      <li><span class="label-kategori PHOTOCARD">PHOTOCARD</span> Single #KuSangatSuka Tipe B - Rp 10.000 / photocard</li>
+      <li><span class="label-kategori PHOTOCARD">PHOTOCARD</span> Spring Has Come - Rp 8.000 / photocard</li>
+      <li><span class="label-kategori PHOTOCARD">PHOTOCARD</span> Road to Sousenkyo - Rp 8.000 / photocard</li>
+      <li><span class="label-kategori PHOTOCARD">PHOTOCARD</span> Magic Hour / Flying High - Rp 9.000 / photocard</li>
+    </ul>
+
+    <a class="pay-button" onclick="tampilkanPembayaran()">Lanjut ke Pembayaran</a>
+  </section>
+
+  <section id="pembayaran">
+    <h2>Pembayaran</h2>
+    <form onsubmit="return prosesPembayaran(event)">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" required />
+      <div id="alamat-wrapper">
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" />
+      </div>
+      <label for="tipe">Tipe Pembelian:</label>
+      <select id="tipe" required onchange="toggleAlamat()">
+        <option value="">-- Pilih --</option>
+        <option value="Online">Online</option>
+        <option value="Langsung">Langsung</option>
+      </select>
+      <label>Produk:</label>
+      <div id="produk-list">
+        <div class="produk-item"><label><input type="checkbox" value="Single Wonderland #KuSangatSuka - Rp 10000"> Single Wonderland #KuSangatSuka</label><input type="number" value="1" min="1" /></div>
+        <div class="produk-item"><label><input type="checkbox" value="Meet & Greet 26th Single #KuSangatSuka - Rp 8000"> Meet & Greet 26th Single #KuSangatSuka</label><input type="number" value="1" min="1" /></div>
+        <div class="produk-item"><label><input type="checkbox" value="Meet & Greet 26th Single Bibir yang Telah Dicuri - Rp 8000"> Meet & Greet 26th Single Bibir yang Telah Dicuri</label><input type="number" value="1" min="1" /></div>
+        <div class="produk-item"><label><input type="checkbox" value="Wonderland Circus - Rp 4000"> Wonderland Circus</label><input type="number" value="1" min="1" /></div>
+        <div class="produk-item"><label><input type="checkbox" value="Single #KuSangatSuka Tipe A - Rp 10000"> Single #KuSangatSuka Tipe A</label><input type="number" value="1" min="1" /></div>
+        <div class="produk-item"><label><input type="checkbox" value="Single #KuSangatSuka Tipe B - Rp 10000"> Single #KuSangatSuka Tipe B</label><input type="number" value="1" min="1" /></div>
+        <div class="produk-item"><label><input type="checkbox" value="Spring Has Come - Rp 8000"> Spring Has Come</label><input type="number" value="1" min="1" /></div>
+        <div class="produk-item"><label><input type="checkbox" value="Road to Sousenkyo - Rp 8000"> Road to Sousenkyo</label><input type="number" value="1" min="1" /></div>
+        <div class="produk-item"><label><input type="checkbox" value="Magic Hour / Flying High - Rp 9000"> Magic Hour / Flying High</label><input type="number" value="1" min="1" /></div>
+      </div>
+      <label for="metode">Metode Pembayaran:</label>
+      <select id="metode" required>
+        <option value="">-- Pilih --</option>
+        <option value="DANA">DANA</option>
+        <option value="OVO">OVO</option>
+        <option value="GoPay">GoPay</option>
+        <option value="Transfer Bank">Transfer Bank</option>
+        <option value="Cash">Cash</option>
+      </select>
+      <label for="nomor">Nomor Pembayaran:</label>
+      <input type="text" id="nomor" />
+      <button type="submit">Bayar</button>
+    </form>
+  </section>
+
+  <section id="struk">
+    <h2>NOTA PEMBELIAN</h2>
+    <div id="hasilStruk"></div>
+    <div class="thanks">
+      Terima kasih telah berbelanja di cxrawrr_shop<br />
+      Hubungi CS: 0838-1542-3928
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 cxrawrr_shop. All rights reserved.
+  </footer>
+
+  <script>
+    function tampilkanPembayaran() {
+      document.getElementById("pembayaran").style.display = "block";
+      window.scrollTo({ top: document.getElementById("pembayaran").offsetTop, behavior: "smooth" });
+    }
+
+    function toggleAlamat() {
+      const tipe = document.getElementById("tipe").value;
+      const alamatWrapper = document.getElementById("alamat-wrapper");
+      alamatWrapper.style.display = tipe === "Online" ? "block" : "none";
+    }
+
+    function prosesPembayaran(event) {
+      event.preventDefault();
+      const nama = document.getElementById("nama").value;
+      const alamat = document.getElementById("alamat").value;
+      const tipe = document.getElementById("tipe").value;
+      const metode = document.getElementById("metode").value;
+      const nomor = document.getElementById("nomor").value;
+      const produkDipilih = [];
+      const produkList = document.querySelectorAll("#produk-list .produk-item");
+      produkList.forEach(item => {
+        const checkbox = item.querySelector("input[type='checkbox']");
+        const jumlah = item.querySelector("input[type='number']").value;
+        if (checkbox.checked) {
+          produkDipilih.push(`${checkbox.value} x${jumlah}`);
+        }
+      });
+      const hasil = `
+        <p><strong>Nama:</strong> ${nama}</p>
+        ${tipe === "Online" ? `<p><strong>Alamat:</strong> ${alamat}</p>` : ""}
+        <p><strong>Tipe Pembelian:</strong> ${tipe}</p>
+        <p><strong>Metode Pembayaran:</strong> ${metode}</p>
+        <p><strong>Nomor Pembayaran:</strong> ${metode === 'Cash' ? '-' : nomor}</p>
+        <p><strong>Produk:</strong><br>${produkDipilih.join('<br>')}</p>
+      `;
+      document.getElementById("hasilStruk").innerHTML = hasil;
+      document.getElementById("struk").style.display = "block";
+      window.scrollTo({ top: document.getElementById("struk").offsetTop, behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
